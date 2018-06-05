@@ -6,7 +6,7 @@ const Game = require('../server/models/game')
 const Console = require('../server/models/console')
 const Badge = require('../server/models/badge')
 const mongoose = require('mongoose')
-const db = "mongodb://thomas:templier@ds157538.mlab.com:57538/lsr"
+const db = "mongodb://localhost:27017/lsrapp"
 const app = express()
 const formidable = require('formidable')
 
@@ -428,7 +428,6 @@ router.delete('/deleteConsole', (req, res, next) => {
 })
 
 module.exports = router
-
 
 
 
