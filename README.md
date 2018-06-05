@@ -1,30 +1,44 @@
 Readme projet web 3
---------------------
+===================
 
-**étape 1**
+by Thomas OLIVER
+-----------------
+**step 1**
 
-telecharger le repertoire sur le github ou bien le clonner avec la commande git clone via le terminal 
+download the directory on the github or clone it with the command git clone via the terminal 
 
-**étape 2**
+**step 2**
 
-encore avec le terminal, entrez a la racine du dossier du projet et faite un npm install (cela vas installer les dependances du projet)
+again with the terminal, enter the root of the project folder and make a npm install (this will install the dependencies of the project)
 
-**étape 3**
+**step 3**
 
-aller ensuite dans le dossier front et refaite un npm install
+then go to the front folder and redo an npm install
 
 
-**etape 4**
+**step 4**
 
-toujour dans le terminal, retourner a la racine du dossier et taper node server
+always in the terminal, return to the root of the file and go where is the database export
 
-**étape 5**
+**step 5**
 
-dans un autre terminal, sur le dossier du front tapez ng serve
+always in the terminal, open a mongo console and type: "use lsrapp" it will create an empty database at the root of the file and go where are the database exports
 
-**étape 6**
+**step 6**
+in a console, browse where the database exports are and type: "mongoimport -d lsrapp -c games --file games.json", "mongoimport -d lsrapp -c consoles --file consoles.json","mongoimport -d lsrapp -c users --file users.json" to import the collection into the empty database
 
-ouvrez maintenant votre navigateur et tapez dans la barre d'addresse: localhost:4200
+**step 7**
+
+always in the terminal, go back to the root of the server folder and type node server
+
+**step 8**
+
+in another terminal, on the front of the file type ng serve
+
+**step 9**
+
+open your browser now and type in the address bar: localhost: 4200
+
 
 
 
